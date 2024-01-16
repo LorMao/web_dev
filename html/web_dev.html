@@ -1,0 +1,170 @@
+<!DOCTYPE html> <!--tag with element type-->
+<html>
+
+<head>
+  <title>HTML LEARNING</title>
+</head>
+
+<body>
+
+  <h1>HTML LEARNING</h1>
+  <h2>Journey to continuous learning</h2>
+
+  <p>
+    This is a paragraph. You can write whatever in here. This is a paragraph. You can write whatever in here. This is a paragraph. You can write whatever in here. <strong>Some CSS tricks make it thicker</strong> <em>italic writing</em>
+  </p>
+
+  <p>
+    This is another paragraph. In this paragraph, we'll put a link directly to it. <a href="https://www.google.com/" target="_blank">This is a link to a website. </a> "href" stand for Hypertext Reference.
+  </p>
+
+  <!--In HTML, the <a> element is used to create hyperlinks.
+    Hyperlinks are clickable text or images that, when clicked, 
+    navigate to another location, such as a different web page, a file, 
+    or an anchor within the same page. The <a> element is commonly known as the anchor element.-->
+  <!-- Target="_blank" opens the link in a new tab -->
+
+
+
+  <!-- Onto learning about listing <ul> stands for unordered list -->
+  <ul>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+  </ul>
+
+  <!-- Onto learning about listing <ol> stands for ordered list -->
+  <ol>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+  </ol>
+
+  <!--discription list-->
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mao</td>
+        <td>something@email.com</td>
+        <td>30</td>
+      </tr>
+
+      <tr>
+        <td>Lucy</td>
+        <td>something@email.yahoo</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>Ricky</td>
+        <td>something@email.org</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Form -->
+  <form action="process.php" method="post">
+    <div>
+      <label>First Name</label>
+      <input type="text" name="firstname" placeholder="first name">
+    </div>
+  <!--placeholder is a text that will be shown before the user types something, while value is the default value that will be shown-->
+    <br>
+    <div>
+      <label>Last Name</label>
+      <input type = "text" name="lastname">
+    </div>
+    <br>
+    <div>
+      <label>email</label>
+      <input type = "text" name="email">
+    </div>
+    <br>
+    <div>
+      <label>message</label>
+      <textarea name= "message"></textarea>
+    </div>
+    <br>
+    <div>
+      <label>gender</label>
+      <select name= "gender">
+        <option value= "male">male</option>
+        <option value= "female">female</option>
+        <option value= "other">other</option>
+    </select>
+    </div>
+    <br>
+    <div>
+      <label>Age</label>
+      <input type="number" name="age" value="30">
+    </div>
+    <br>
+    <div>
+      <label>birthday</label>
+      <input type="date" name="birthday">
+    </div>
+    <br>
+    <input type="submit" name="submit"
+    value="submit" 
+
+  </form>
+
+
+
+
+  <div>
+    <!--Button-->
+    <button>click me</button>
+    <!--button is not going to do anything untell you all javascript
+        you can have button outside of form-->
+  </div>
+  
+
+
+    <!--image-->
+    <img src="image/sample.jpeg" alt="my sample image">
+    <!--having the alt there, in case when the image can't be find, it will be display what ever text is there.-->
+
+    <img src="image/sample.jpeg" alt="my sample image" width="200" height="500">
+    <!--it is avilable to resize the image but it is perferably to use css. image is a self closing tab.-->
+
+
+
+    <!--put link on image-->
+    <a href="image/sample.jpeg">
+        <img src="image/sample.jpeg" alt="my sample image">
+    </a>
+
+
+
+<!--quotation-->
+<blockquote>quot to an article or from other page</blockquote>
+
+
+
+
+
+    <div style="margin-top:500px"></div>
+</body>
+</html>

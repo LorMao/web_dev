@@ -1,0 +1,122 @@
+h3 {
+    color:green;
+}
+
+body {
+    background-color: skyblue ;
+    color: red;
+}
+
+/*----------------------------------*/
+body {
+    font-family: sans-serif, arial;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+body {
+    
+    font: normal 20px Arial, helvetica, sans-serif;
+}
+/*-------------------------------------*/
+/*these two are the same, 
+the second onw id shorter way of doing it */
+
+
+/*line height, the space of the sentence*/
+
+body {
+    font: normal 20px Arial, helvetica, sans-serif;
+    line-height: 3.0em;
+    margin: 0;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+
+.container{
+    width: 80%; /*most of the time it's best to use % instead of px*/
+    margin:auto;
+}
+
+/*when modefying class have a dot first*/
+.box-1{
+    background-color: #333;
+    color: white;
+
+/*border*/
+    border-right:5px red solid;
+    border-left:5px blue solid;
+    border-top:5px pink solid;
+    border-bottom:5px yellow solid;
+
+    /*if the boarder is all the smae color you can use the bottom one instead*/
+    border: 5px red solid;
+    /*this is if you wanted to target a specific or add things on to the boarder*/
+    border-width: 10px; /*the whole boarder?*/
+    border-bottom-width: 50px;/*only the bottom of the boarder*/
+    border-top-style: dotted;
+
+/*padding*/
+/*creat space inside your container*/
+    padding: 50px;
+    /*sane as the border, if you wanted to target a specific boarder than put down padding-right or left, or top, or  bottom.*/
+
+/*reset button for the padding and margin you can type it in 
+*{
+    margin:0;
+    padding:0;
+}
+*/
+
+/*margin*/
+/*margin is where to place the boarder in the site*/
+    margin-top:100px; /*created space on the top of the container*/
+    /*same as the rest of them, if you dont want to fix a specific side then just use (margin: 50px;) */
+}
+
+
+
+/*now on to working with font styling*/
+
+.box-1 p{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration: uppercase;
+    letter-spacing: 1.2em;
+    word-spacing: 1em;
+}
+
+/*box-2 styling*/
+.box-2{
+    border: 3px dotted grey;
+    padding: 20px;
+    margin: 20px;
+}
+
+.categories{
+    border: 1px #333 solid;
+    padding: 10px;
+    margin: 20;
+}
+
+.categories h1{
+    text-align:center;
+}
+
+/*wroking with ul*/
+.categories ul{
+    padding:0;
+    list-style: square;
+    list-style: none;
+}
