@@ -1,93 +1,54 @@
+/* General Styling */
 h3 {
-    color:green;
+    color: brown;
 }
 
+/*
 body {
-    background-color: skyblue ;
-    color: red;
-}
-
-/*----------------------------------*/
-body {
+    background-color: skyblue;
+    color: black;
     font-family: sans-serif, arial;
     font-size: 20px;
-    font-weight:bold;
-}
-
-body {
-    
-    font: normal 20px Arial, helvetica, sans-serif;
-}
-/*-------------------------------------*/
-/*these two are the same, 
-the second onw id shorter way of doing it */
-
-
-/*line height, the space of the sentence*/
-
-body {
-    font: normal 20px Arial, helvetica, sans-serif;
+    font-weight: bold;
     line-height: 3.0em;
     margin: 0;
 }
+*/
 
-
-a{
-  text-decoration: none;
-  color: black;
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: black;
 }
 
-a:hover{
+a:hover {
     color: red;
 }
 
-
-.container{
-    width: 80%; /*most of the time it's best to use % instead of px*/
-    margin:auto;
+a:active {
+    color: green;
 }
 
-/*when modefying class have a dot first*/
-.box-1{
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Box-1 Styling */
+.box-1 {
     background-color: #333;
     color: white;
-
-/*border*/
-    border-right:5px red solid;
-    border-left:5px blue solid;
-    border-top:5px pink solid;
-    border-bottom:5px yellow solid;
-
-    /*if the boarder is all the smae color you can use the bottom one instead*/
     border: 5px red solid;
-    /*this is if you wanted to target a specific or add things on to the boarder*/
-    border-width: 10px; /*the whole boarder?*/
-    border-bottom-width: 50px;/*only the bottom of the boarder*/
+    border-width: 10px;
+    border-bottom-width: 50px;
     border-top-style: dotted;
-
-/*padding*/
-/*creat space inside your container*/
     padding: 50px;
-    /*sane as the border, if you wanted to target a specific boarder than put down padding-right or left, or top, or  bottom.*/
-
-/*reset button for the padding and margin you can type it in 
-*{
-    margin:0;
-    padding:0;
-}
-*/
-
-/*margin*/
-/*margin is where to place the boarder in the site*/
-    margin-top:100px; /*created space on the top of the container*/
-    /*same as the rest of them, if you dont want to fix a specific side then just use (margin: 50px;) */
+    margin-top: 100px;
 }
 
-
-
-/*now on to working with font styling*/
-
-.box-1 p{
+/* Font Styling for Box-1 Paragraphs */
+.box-1 p {
     font-family: tahoma;
     font-weight: 800;
     font-style: italic;
@@ -97,30 +58,63 @@ a:hover{
     word-spacing: 1em;
 }
 
-/*box-2 styling*/
-.box-2{
+/* Box-2 Styling */
+.box-2 {
     border: 3px dotted grey;
     padding: 20px;
     margin: 20px;
 }
 
-.categories{
+/* Categories Styling */
+.categories {
     border: 1px #333 solid;
     padding: 10px;
-    margin: 20;
+    margin: 20px;
 }
 
-.categories h1{
-    text-align:center;
+.categories h1 {
+    text-align: center;
 }
 
-/*wroking with ul*/
-.categories ul{
-    padding:0;
-    list-style: square;
-    list-style: none;
+/* Working with UL in Categories */
+.categories ul {
+    padding: 0;
+    list-style: none; /* Note: Removed duplicate 'list-style: square;' */
 }
 
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+}
 
-/*hello*/
-/*hello2/
+/* Form Styling */
+.my-form {
+    padding: 20px;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], 
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+/*button*/
+.my-form input[type="submit"]{
+    background-color: black;
+    color:white;
+    padding:20px 10px;
+    border:none;
+}
+
+.block{
+    padding:20px;
+    float:left;
+    width:33.3%;
+    border:1px solid black;
+    /*use this to fit all the box in horizontal*/
+    box-sizing: border-box;
+
+}
